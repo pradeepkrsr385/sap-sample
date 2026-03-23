@@ -330,6 +330,10 @@
             ],
             "webapps": [
                 {
+                    "name": "yacceleratorstorefront",
+                    "contextPath": ""
+                },
+                {
                     "name": "mediaweb",
                     "contextPath": "/medias"
                 },
