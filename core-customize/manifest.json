@@ -5,17 +5,6 @@
         "cloudmediaconversion",
         "mediaconversionbackoffice"
     ],
-    "storefrontAddons": [
-        {
-            "addons": [
-                "ordermanagementaddon"
-            ],
-            "storefronts": [
-                "yacceleratorstorefront"
-            ],
-            "template": "yacceleratorstorefront"
-        }
-    ],
     "useConfig": {
         "properties": [
             {
@@ -260,7 +249,8 @@
                     "contextPath": "/permissionswebservices"
                 },
                 {
-                    "name": "odata2webservices"
+                    "name": "odata2webservices",
+                    "contextPath": "/odata2webservices"
                 },
                 {
                     "name": "orbeonweb",
@@ -463,6 +453,18 @@
                     "value": "*"
                 },
                 {
+                    "key": "corsfilter.personalizationwebservices.allowedHeaders",
+                    "value": "origin content-type accept authorization cache-control x-anonymous-consents"
+                },
+                {
+                    "key": "corsfilter.personalizationwebservices.allowedMethods",
+                    "value": "GET HEAD OPTIONS PATCH PUT POST DELETE"
+                },
+                {
+                    "key": "corsfilter.personalizationwebservices.exposedHeaders",
+                    "value": "x-anonymous-consents"
+                },
+                {
                     "key": "mockup.payment.label.billTo.region",
                     "value": "billTo_state"
                 },
@@ -545,18 +547,5 @@
                 }
             ]
         }
-    ],
-    "tests": {
-        "extensions": [
-            "kiwi",
-            "tiger"
-        ],
-        "annotations": [
-            "UnitTests",
-            "IntegrationTests"
-        ],
-        "packages": [
-            "com.acme.*"
-        ]
-    }
+    ]
 }
