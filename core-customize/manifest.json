@@ -1,33 +1,9 @@
 {
     "commerceSuiteVersion": "2211.50",
     "useConfig": {
-        "properties": [
+        "properties": [  
             {
-                "location": "hybris/config/environments/local-dev.properties",
-                "persona": "development"
-            },
-            {
-                "location": "hybris/config/environments/local-stage.properties",
-                "persona": "staging"
-            },
-            {
-                "location": "hybris/config/environments/local-prod.properties",
-                "persona": "production"
-            },
-            {
-                "location": "hybris/config/environments/common.properties"
-            },
-            {
-                "aspect": "accstorefront",
-                "location": "hybris/config/environments/accstorefront.properties"
-            },
-            {
-                "aspect": "api",
-                "location": "hybris/config/environments/api.properties"
-            },
-            {
-                "aspect": "backoffice",
-                "location": "hybris/config/environments/backoffice.properties"
+                "location": "hybris/config/local.properties"
             }
         ],
         "extensions": {
@@ -232,7 +208,7 @@
                 },
                 {
                     "name": "previewwebservices",
-                    "contextPath": "/previewwebservices"
+                    "contextPath": "/previewwebsExceervices"
                 },
                 {
                     "name": "permissionswebservices",
